@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title> Forms 1 </title>
+    </head>
+
+    <body>
+        <p> chris was here </p>
+        <h1> <u>Registration Form</u> </h1>
+  <!-- GET method shows all values in the URL -->
+  <!-- POST method DOES NOT show all values in the URL -->
+       <form action="#" method="GET">
+           <label for="username">Username:</label>
+           <input id="username" name="username" type="text" placeholder="Type your username"/> <br>
+           
+           <label for="password">Password:</label>
+           <input id="password" name="password" type="password" placeholder="Type your password"/><br>
+           
+           <label for="password2">Verify Password:</label>
+           <input id="password2" name="password2" type="password" placeholder="Verify your password"/><br>
+
+
+
+           <label for="email">Email:</label>
+           <input id="email" name="email" type="email" placeholder="Enter your email here" required/><br>
+
+           <input  type="checkbox" id="newsletter" value="Y" name="newsletter" />
+           <label for="newsletter"> Subscribe to our newsletter</label> <br>
+
+           <label for="level"> What is your level of expertise? </label>
+           <select id="level" name="level">
+                <option value="e"> Expert <option>
+                <option value="i"> Intermediate <option>
+                <option value="n"> Novice <option>
+            </select>
+            <br>
+
+           <input type="submit" value="Submit"/>
+           <input type="reset" value="Clear"/>
+
+       </form>
+
+
+    </body>
+
+
+</html>

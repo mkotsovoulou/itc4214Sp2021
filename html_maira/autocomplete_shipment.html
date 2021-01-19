@@ -1,0 +1,64 @@
+<-- STEP 1: for each of these input types use as name attribute:  attribute_name=value
+name
+address
+city
+postal
+country
+phone
+email
+
+
+STEP 2:
+use the following in the autocomplete attribute:
+name
+street-address
+address-level2
+postal-code
+country
+tel
+email --> 
+
+[16:04] Sotirios Karachalios
+<html>
+<head>
+<title> Forms 1 </title>
+</head> <body>
+<h1> <u>Sample Autocomplete/u> </h1> 
+  <form action="#" method="POST">
+<label for="name">name:</label>
+<input id="name" name="name" type="name" placeholder="Text input" autocomplete="name"/> <br>
+<label for="address">address:</label>
+<input id="address" name="address" type="address" placeholder="Text input"/><br>
+<label for="city">city:</label>
+<input id="city" name="city" type="city" placeholder="Text input"/><br>
+<label for="postal">postal:</label>
+<input id="postal" name="postal" type="postal" placeholder="Text input"/><br>
+<label for="country">country:</label>
+<input id="country" name="country" type="country" placeholder="Text input"/><br>
+<label for="Email">Email:</label>
+<input id="Email" name="Email" type="email" placeholder="Text input"/> <br>
+<br>
+<input id="favoriteBrowser" name="favoriteBrowser" list="browsers" />
+<datalist id="browsers">
+	<option value="chrome"></option>
+  	<option value="firefox"></option>
+  	<option value="ie"></option>
+</datalist>
+    <br>
+<select id="bb" name="bb">
+  
+  <option value="chrome">Chrome</option>
+   <option value="firefox">firefox</option>
+   <option value="ie">ie</option>
+ 
+    </select>
+    
+    <input type="file"/>
+<input type="submit" value="Submit"/>
+<input type="reset" value="Clear"/>   
+</form>
+</body></html>
+
+  
+  
+
