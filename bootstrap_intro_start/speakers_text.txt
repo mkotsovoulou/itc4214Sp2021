@@ -14,4 +14,4 @@
 <p class="card-text">Jay is a developer, author of CSS: The Missing Manual, JavaScript &amp; jQuery: The Missing Manual, and web development teacher.</p>
 
 <h4 class="card-title">Json Babel</h4>
-<p class="card-text">All of his professional life, Json has worked with computers online; he is a polyglot programme
+<p class="card-text">All of his professional life, Json has worked with computers online; he is a polyglot programme</p>
