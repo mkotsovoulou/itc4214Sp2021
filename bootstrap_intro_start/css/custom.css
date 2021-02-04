@@ -1,0 +1,9 @@
+.bg-lgreen {
+    background-color: #7feab9!important;
+}
+
+.bg-top {
+  /* add a background image */
+  background-image: url('../img/jumbo-bg.jpg');
+  background-repeat: no-repeat;
+}
