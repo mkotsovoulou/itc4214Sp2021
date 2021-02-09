@@ -9,10 +9,30 @@
   <h1>
     Title
   </h1>
-  
-  <input type="text" id="lname" name="lname" value="dasdsad"/>
-  
-  <div id="message" style="background-color:grey;">
+    <label for="lname"> Name </label>
+  <input type="text" id="lname" name="lname" value="dasdsad"/> <br>
+  What is your current Javascript Level? <br>
+  <select id="level"> 
+    <option value="1"> Novice</option>
+    <option value="2"> Medium</option>
+    <option value="3"> Advanced</option>
+  </select><br>
+  Which type for OS are you currently using?
+  <label for="Win"> Windows </label>
+  <input type="radio" id="Win" name="OS" value="Win">
+    <label for="Unix"> Unix </label>
+   <input type="radio" id="Unix" name="OS" value="Unix">
+    <label for="Mac"> MAc </label>
+   <input type="radio" id="Mac" name="OS" value="Mac">
+  <br>
+  Subscribe? <input type="checkbox" value="Y" checked/> <br>
+  <button id="copy">
+    Copy Values to Message
+  </button>
+  <h1>
+    Message
+  </h1>
+  <div id="message" style="background-color:grey;height:200px;">
     
     <b>Hello</b> from JQuery
   </div>
@@ -38,6 +58,10 @@
        $('#demo').fadeOut("slow");
     });
     
+    $("#copy").click(function() {
+      var lname = $('#lname').val();
+      $('#message').html(lname);
+    })
   </script>
   
 </body>
