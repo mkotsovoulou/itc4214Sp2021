@@ -29,7 +29,7 @@
     </p>
     <ul id="destinations" class="attractions">
        <li>Athens
-      <button>
+      <button id="showAthensPrice">
         Show Price
          </button>
       </li>
@@ -63,7 +63,11 @@
     $(document).ready(function () {
        var AthensPrice = $('<p><b> from 200$</b></p>');
       
-      $('#destinations li:first').append(AthensPrice);
+      $("#showAthensPrice").on('click', function() {
+        $('#destinations li:first').append(AthensPrice);
+        $("#showAthensPrice").hide();
+      });
+      
       
     });
     
