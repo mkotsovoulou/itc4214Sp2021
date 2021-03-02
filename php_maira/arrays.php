@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<title></title>
+	<title>Car listings</title>
+   <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
 </head>
 <body>
   <h1>
@@ -10,27 +14,9 @@
   </h1>
 
 <?php
-$headings = array(
-  'model'=> 'MODEL',
-  'year' => 'YEAR',
-'colour' => 'COLOR',
-'doors'  => '# DOORS');
-
-$car1 = array(
-  'model'=> 'FIAT',
-  'year' => 2021,
-'colour' => 'blue',
-'doors'  => 5);
-
-$car2 = array(
-  'model' => 'MINI',
-  'year' => 2020,
-'colour' => 'white',
-'doors' => 2);
-
-$cars = array ( $headings, $car1, $car2);
-
-echo '<table border="1">';
+include('database.php');
+  
+echo '<table class="table table-dark table-striped">';
  foreach ($cars as $car) {
    echo '<tr>';
    foreach($car as $value) {
