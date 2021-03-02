@@ -1,4 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title></title>
+</head>
+<body>
+  <h1>
+     Our car listings
+  </h1>
+
 <?php
+$headings = array(
+  'model'=> 'MODEL',
+  'year' => 'YEAR',
+'colour' => 'COLOR',
+'doors'  => '# DOORS');
 
 $car1 = array(
   'model'=> 'FIAT',
@@ -12,27 +28,20 @@ $car2 = array(
 'colour' => 'white',
 'doors' => 2);
 
-
-foreach ($car1 as $value) {
-  echo $value . ' <br/>';
-}
+$cars = array ( $headings, $car1, $car2);
 
 echo '<table border="1">';
-echo '<tr>';
-foreach ($car2 as $key=>$value) {
-  echo  '<td>' . $key . '</td>';
-}
-echo '</tr>';
-echo '<tr>';
-foreach ($car2 as $key=>$value) {
-  echo  '<td>' . $value . '</td>';
-}
-echo '</tr>';
-echo '<tr>';
-foreach ($car1 as $key=>$value) {
-  echo  '<td>' . $value . '</td>';
-}
-echo '</tr>';
-
+ foreach ($cars as $car) {
+   echo '<tr>';
+   foreach($car as $value) {
+     echo '<td>' . $value . '</td>';
+   }
+   echo '</tr>';
+   echo '<br>';
+ }
 echo '</table>';
+
 ?>
+
+</body>
+</html>
