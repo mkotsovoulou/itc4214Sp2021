@@ -27,5 +27,5 @@ $car3 = array(
 'colour' => 'black',
 'doors' => 2,
  'photo' => '');
-$cars = array ( $headings, $car1, $car2, $car3);
+$cars = array ( $car1, $car2, $car3, $car1, $car2, $car3);
 ?>
